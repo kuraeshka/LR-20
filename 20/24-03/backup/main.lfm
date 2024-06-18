@@ -1,0 +1,31 @@
+object Form1: TForm1
+  Left = 263
+  Height = 192
+  Top = 100
+  Width = 615
+  Caption = 'Редактирование сетки TStringGrid'
+  ClientHeight = 192
+  ClientWidth = 615
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 120
+    Top = 8
+    Width = 615
+    CellHintPriority = chpAll
+    DefaultRowHeight = 18
+    ParentShowHint = False
+    TabOrder = 0
+    OnGetEditMask = StringGrid1GetEditMask
+  end
+  object Button1: TButton
+    Left = 248
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'Добавить'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end
